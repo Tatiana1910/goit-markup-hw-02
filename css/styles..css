@@ -182,3 +182,8 @@ ul {
   letter-spacing: 0.03em;
   color: var(--light-txt-cl);
 }
+
+.project-name,
+.project-text {
+  text-decoration: none;
+}
