@@ -11,13 +11,23 @@
   /*Background  colors*/
   --dark-bg-cl: #2f303a;
   --light-bg-cl: #f5f4fa;
+  --white-bg-cl: #ffffff;
+
+  /*other*/
+  --light1-cl: #eeeeee;
+  --light2-cl: #ececec;
+  --black-cl: #000000;
+  --transparent-white-cl: rgba(255, 255, 255, 0.6);
 }
 
 /*Хедер*/
 
-.page {
+body {
   color: var(--main-txt-cl);
   font-family: var(--main-font);
+  background-color: var(--white-bg-cl);
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 
 ul {
@@ -34,7 +44,6 @@ ul {
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
-  letter-spacing: 0.03em;
   text-decoration: none;
   color: #000000;
 }
@@ -44,7 +53,6 @@ ul {
 
 .nav-item {
   font-weight: 500;
-  font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--main-txt-cl);
@@ -56,7 +64,6 @@ ul {
 
 .nav-contact {
   font-weight: 500;
-  font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--light-txt-cl);
@@ -85,6 +92,7 @@ ul {
   color: var(--white-txt-cl);
   font-family: inherit;
   font-size: 16px;
+  font-weight: 700;
   line-height: calc(30 / 16);
   display: flex;
   align-items: center;
@@ -95,31 +103,51 @@ ul {
 }
 
 /*особливості*/
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .subtitle {
-  font-size: 14px;
   line-height: calc(16 / 14);
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
-/*чим ми займаємось*/
 .text {
-  font-size: 14px;
   line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
   color: var(--light-txt-cl);
+}
+
+/*чим ми займаємось*/
+
+.heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  color: var(--main-txt-cl);
 }
 
 /*Наша команда*/
 
+.team {
+  background-color: var(--light-bg-cl);
+}
+
 .person {
+  font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
-  letter-spacing: 0.03em;
   color: var(--main-txt-cl);
-}
-.team .person {
-  background-color: var(--light-bg-cl);
 }
 
 .person-name {
@@ -127,16 +155,21 @@ ul {
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
-  letter-spacing: 0.03em;
 }
 .persone-title {
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--light-txt-cl);
 }
 /*Футер*/
+.footer .logo {
+  color: var(--white-txt-cl);
+}
+.footer .logo .span {
+  color: var(--accent-txt-cl);
+}
+
 .footer {
   background-color: var(--dark-bg-cl);
 }
@@ -149,10 +182,8 @@ ul {
 .contact {
   font-family: 'Roboto';
   font-style: normal;
-  font-size: 14px;
   line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--transparent-white-cl);
 }
 .contact .adres {
   color: var(--white-txt-cl);
@@ -168,7 +199,6 @@ ul {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
-  letter-spacing: 0.03em;
 }
 
 /*Портфоліо
@@ -184,14 +214,19 @@ ul {
   font-weight: 400;
   font-size: 16px;
   line-height: calc(30 / 16);
-  letter-spacing: 0.03em;
   color: var(--light-txt-cl);
 }
 
 .button {
   cursor: pointer;
   border: none;
-  background-color: #f5f4fa;
+  background-color: var(--light-bg-cl);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  color: var(--main-txt-cl);
 }
 
 .button:hover,
